@@ -1,0 +1,368 @@
+/* Variables de color */
+$primary-bg: #111111
+$secondary-bg: #222222
+$tertiary-bg: #333333
+$text-color: #ffffff
+$link-color: #4c86b8
+$accent-color: #ff7f00
+
+/* Estilos generales */
+:root
+  --primary-bg: #111111
+  --secondary-bg: #222222
+  --tertiary-bg: #333333
+  --text-color: #ffffff
+  --link-color: #4c86b8
+  --accent-color: #ff7f00
+
+/* Espacio en blanco antes de body */
+body
+  font-family: 'Roboto', sans-serif
+  background-color: var(--primary-bg)
+  color: var(--text-color)
+  line-height: 1.6
+  margin: 20px /* Margen exterior para separar del borde de la ventana */
+
+/* Encabezado */
+header 
+  text-align: center
+  padding: 30px 0
+  background-color: var(--tertiary-bg)
+  color: var(--text-color)
+
+  h1 
+    margin: 0
+    font-size: 30px
+  
+
+  h2 
+    margin: 0
+    font-size: 24px
+    margin-bottom: 10px
+  
+
+  p 
+    margin: 0
+  
+
+
+/* Enlaces */
+a 
+  color: var(--link-color)
+  text-decoration: none
+  transition: color 0.3s ease
+
+  &:hover 
+    color: var(--accent-color)
+  
+
+
+/* Secciones */
+.section 
+  margin-bottom: 30px
+  padding: 20px
+  background-color: var(--secondary-bg)
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1)
+  border-radius: 5px
+  transition: transform 0.3s ease, box-shadow 0.3s ease
+
+  &:last-child 
+    margin-bottom: 0
+  
+
+  h2 
+    font-size: 20px
+    color: var(--text-color)
+    margin-bottom: 15px
+  
+
+  ul 
+    margin: 0
+    padding: 0
+    list-style-type: none
+  
+
+  li 
+    margin-bottom: 10px
+  
+
+  .details 
+    color: #aaaaaa
+    font-size: 14px
+  
+
+
+/* Experiencia */
+.experience 
+  margin-bottom: 30px
+
+  h2 
+    text-align: center
+    font-size: 24px
+    margin-bottom: 10px
+    color: var(--text-color)
+  
+
+  ul 
+    margin: 0
+    padding: 0
+    list-style-type: none
+  
+
+  li 
+    margin-bottom: 20px
+    padding: 20px
+    background-color: var(--secondary-bg)
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+    border-radius: 5px
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+    cursor: pointer
+
+    &:hover 
+      transform: translateY(-5px)
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+    
+
+    h3 
+      margin: 0
+      font-size: 18px
+      margin-bottom: 10px
+      color: var(--text-color)
+    
+
+    p.details 
+      margin: 0
+      font-size: 14px
+      color: #aaaaaa
+    
+
+    p 
+      margin: 0
+      font-size: 14px
+      color: #aaaaaa
+    
+  
+
+
+/* Habilidades */
+.skills 
+  margin-bottom: 30px
+
+  ul 
+    margin: 0
+    padding: 0
+    list-style-type: none
+    display: flex
+    flex-wrap: wrap
+  
+
+  li 
+    margin-right: 15px
+    margin-bottom: 10px
+    padding: 5px 10px
+    background-color: var(--link-color)
+    border-radius: 20px
+    font-size: 14px
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+    cursor: pointer
+
+    &:hover 
+      transform: translateY(-5px)
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+    
+  
+
+
+/* Proyectos */
+.projects 
+  margin-bottom: 30px
+
+  .project 
+    position: relative
+    margin-bottom: 20px
+    padding: 20px
+    background-color: var(--secondary-bg)
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1)
+    border-radius: 5px
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+    cursor: pointer
+
+    img 
+      position: relative
+      width: 250px
+      height: auto
+      border-radius: 5px
+      margin-bottom: 10px
+      z-index: 1
+    
+
+    a 
+      position: relative
+      z-index: 1
+    
+
+    &:hover 
+      transform: translateY(-5px)
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+    
+
+    h3 
+      margin: 0
+      font-size: 20px
+      margin-bottom: 10px
+      color: var(--text-color)
+    
+
+    p 
+      margin: 10px 0
+      font-size: 16px
+      color: #cccccc
+      line-height: 1.4
+    
+  
+
+
+/* Botón GitHub */
+.github-button 
+  display: block
+  margin-top: 10px
+  padding: 10px 20px
+  background-color: var(--link-color)
+  color: #ffffff
+  border: none
+  border-radius: 5px
+  font-size: 14px
+  cursor: pointer
+  transition: transform 0.3s ease, box-shadow 0.3s ease
+
+  &:hover 
+    animation: rainbow 1s infinite
+  
+
+
+@keyframes rainbow
+  0%
+    background-color: #ff0000
+  14%
+    background-color: #ff7f00
+  28%
+    background-color: #ffff00
+  42%
+    background-color: #00ff00
+  57%
+    background-color: #0000ff
+  71%
+    background-color: #8b00ff
+  85%
+    background-color: #ff00ff
+  100%
+    background-color: #ff0000
+
+
+/* Foto de perfil */
+.photo 
+  text-align: center
+  margin-bottom: 50px
+  margin-top: 50px
+
+  img 
+    display: block
+    margin: 0 auto
+    width: 300px
+    height: 300px
+    border-radius: 50% /* Cambiamos el border-radius para que sea circular */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease /* Agregamos efecto de filtro */
+
+    &:hover 
+      transform: scale(1.05) translateY(-5px) /* Escalamos ligeramente y movemos hacia arriba */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) /* Incrementamos la sombra en el hover */
+    
+  
+
+
+/* Certificados */
+.certificates 
+  margin-bottom: 30px
+
+  ul 
+    margin: 0
+    padding: 0
+    list-style-type: none
+  
+
+  li 
+    margin-bottom: 10px
+  
+
+  .certificate 
+    display: flex
+
+    img 
+      width: 100px
+      height: auto
+      margin-right: 10px
+      border-radius: 5px
+      object-fit: cover
+      cursor: pointer
+      transition: transform 0.3s ease, box-shadow 0.3s ease
+
+      &:hover 
+        transform: scale(1.1)
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+      
+    
+  
+
+
+/* Redes sociales */
+.social-media 
+  margin-bottom: 30px
+
+  h2 
+    text-align: center
+  
+
+  ul 
+    margin: 0
+    padding: 0
+    list-style-type: none
+    display: flex
+    justify-content: center
+  
+
+  li 
+    margin-right: 20px
+    position: relative
+    transform-style: preserve-3d
+    transition: transform 0.5s cubic-bezier(0.4, 0.15, 0.6, 1)
+
+    a 
+      display: inline-flex
+      align-items: center
+      justify-content: center
+      width: 50px
+      height: 50px
+      border-radius: 50%
+      background-color: #ffffff
+      color: #ffffff
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+      transition: transform 0.5s cubic-bezier(0.4, 0.15, 0.6, 1), box-shadow 0.3s ease
+
+      &:hover 
+        transform: translateY(-5px) rotate(360deg)
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3)
+      
+
+      img 
+        width: 30px
+        height: 30px
+        transition: transform 0.5s cubic-bezier(0.4, 0.15, 0.6, 1)
+
+        &:hover 
+          transform: scale(1.2)
+        
+      
+    
+  
+
